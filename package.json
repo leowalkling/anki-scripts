@@ -1,0 +1,31 @@
+{
+  "name": "anki-scripts",
+  "version": "0.0.0",
+  "description": "",
+  "directories": {
+    "lib": "lib",
+    "bin": "bin",
+    "test": "test"
+  },
+  "dependencies": {
+      "cookie": "*",
+      "browserify-zlib": "*"
+  },
+  "devDependencies": {
+    "karma-browserifast": "*",
+    "karma-commonjs": "*",
+    "karma": "*",
+    "karma-mocha": "*",
+    "browserify": "*",
+	"mocha": "*",
+	"chai": "*",
+	"uglifyify": "*"
+  },
+  "scripts": {
+    "test": "karma start",
+	"br": "browserify -g uglifyify index.js -o bin/_ankiscriptcollection.js",
+    "bd": "browserify index.js -o bin/_ankiscriptcollection.js"
+  },
+  "author": "Leopold Walkling",
+  "license": "ISC"
+}
